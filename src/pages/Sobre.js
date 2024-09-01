@@ -9,6 +9,7 @@ export default function Sobre({ navigation }) {
     <SafeAreaView style={styles.container}>
       <View >
         <Text>Sobre</Text>
+        <Text>Alunos:</Text>
       </View>
     </SafeAreaView>
   );

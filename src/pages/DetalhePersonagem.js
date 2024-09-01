@@ -1,17 +1,15 @@
 import { Button, SafeAreaView, StyleSheet, View, FlatList, Text, TouchableOpacity } from "react-native";
 import React from "react";
-import Personagens from "./Personagens";
 
 
 
-export default function Home({ navigation }) {
-    const goToPersonagens = () => navigation.navigate("Personagens");
+export default function DetalhePersonagem({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       <View >
-        <Text>Home</Text>
-        <TouchableOpacity onPress={goToPersonagens}>
-            <Text>Personagens</Text>
+        <Text>DetalhePersonagem</Text>
+        <TouchableOpacity >
+            <Text>Naves</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
