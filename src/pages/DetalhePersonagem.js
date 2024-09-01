@@ -4,13 +4,18 @@ import React from "react";
 
 
 export default function DetalhePersonagem({ navigation }) {
+    const goToNaves = () => navigation.navigate("Nave");
+    const goToFilmes = () => navigation.navigate("Filmes");
   return (
     <SafeAreaView style={styles.container}>
       <View >
         <Text>DetalhePersonagem</Text>
-        <TouchableOpacity >
-            <Text>Naves</Text>
-        </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={goToNaves}>
+        <Text style={styles.buttonText}>Ver Naves</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.button} onPress={goToFilmes}>
+        <Text style={styles.buttonText}>Ver Filmes</Text>
+      </TouchableOpacity>
       </View>
     </SafeAreaView>
   );

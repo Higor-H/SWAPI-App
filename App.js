@@ -6,6 +6,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "./src/pages/Home"
 import Sobre from "./src/pages/Sobre"
 import Personagens from "./src/pages/Personagens"
+import Nave from "./src/pages/Nave"
+import Filmes from "./src/pages/Filmes"
 import DetalhePersonagem from "./src/pages/DetalhePersonagem"
 import { Ionicons } from "@expo/vector-icons";
 
@@ -57,6 +59,24 @@ const App = () => {
           component={DetalhePersonagem}
           options={{
             headerTitle: "Detalhes do Personagem",
+            headerTitleAlign: "center",
+          }}
+        />
+
+        <Stack.Screen
+          name="Nave"
+          component={Nave}
+          options={{
+            headerTitle: "Nave",
+            headerTitleAlign: "center",
+          }}
+        />
+
+<Stack.Screen
+          name="Filmes"
+          component={Filmes}
+          options={{
+            headerTitle: "Filmes",
             headerTitleAlign: "center",
           }}
         />
