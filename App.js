@@ -1,20 +1,50 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { Button, SafeAreaView, StyleSheet, TouchableOpacity , Text} from "react-native";
+import { StatusBar } from "expo-status-bar";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Home from "./src/pages/Home"
+import Sobre from "./src/pages/Sobre"
+import { Ionicons } from "@expo/vector-icons";
 
-export default function App() {
+const Stack = createNativeStackNavigator();
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{
+          headerTintColor: "white",
+          headerStyle: {
+            backgroundColor: "red",
+          },
+        }}
+      >
+         <Stack.Screen
+          name="Home"
+          component={Home}
+          options={({ navigation }) => ({
+            headerTitle: "Star Wars",
+            headerTitleAlign: "center",
+            headerRight: () => (
+              <TouchableOpacity onPress={() => navigation.navigate("Sobre")}>
+                <Ionicons name="menu" size={25} color="white" />
+              </TouchableOpacity>
+            ),
+          })}
+        />
+        <Stack.Screen
+          name="Sobre"
+          component={Sobre}
+          options={{
+            headerTitle: "Sobre",
+            headerTitleAlign: "center",
+          }}
+        />
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
+export default App;
