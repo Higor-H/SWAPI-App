@@ -1,11 +1,15 @@
 import { Button, SafeAreaView, StyleSheet, View, FlatList, Text, TouchableOpacity } from "react-native";
 import React from "react";
+import axios from "axios";
 
 
-
-export default function DetalhePersonagem({ navigation }) {
+export default function DetalhePersonagem({ navigation, name}) {
     const goToNaves = () => navigation.navigate("Nave");
     const goToFilmes = () => navigation.navigate("Filmes");
+
+
+    const [personagem, SetPersonagem] = useState(); 
+
   return (
     <SafeAreaView style={styles.container}>
       <View >
