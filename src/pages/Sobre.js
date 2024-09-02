@@ -16,9 +16,9 @@ export default function Sobre({ navigation }) {
             <Text>RA: 1135828 </Text>
         </View>
         <View>
-            <Text>Nome:  </Text>
-            <Text>Email: </Text>
-            <Text>RA:  </Text>
+            <Text>Nome: Enzo Gambatto Almeida</Text>
+            <Text>Email: 1134927@atitus.edu.br</Text>
+            <Text>RA: 1134927</Text>
         </View>
         <View>
             <Text>Nome:  </Text>
