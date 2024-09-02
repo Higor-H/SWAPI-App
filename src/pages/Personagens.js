@@ -22,29 +22,35 @@ export default function Personagens({ navigation }) {
             <Personagem
             Nome={"Luke Skywalker"}
             navegateDetalhes={() =>
-                navigation.navigate("Detalhes do Personagem", "Luke Skywalker")}
+                navigation.navigate("Detalhes do Personagem", {name: "Luke Skywalker"})}
             />
         </TouchableOpacity>
         <TouchableOpacity>
             <Personagem
             Nome={"Darth Vader"}
             navegateDetalhes={() =>
-                navigation.navigate("Detalhes do Personagem")}
+                navigation.navigate("Detalhes do Personagem", {name: "Darth Vader"})}
             />
         </TouchableOpacity>
         <TouchableOpacity>
             <Personagem
-            Nome={"Han Solo"}
+            Nome={"Han Solo" }
+            navegateDetalhes={() =>
+                navigation.navigate("Detalhes do Personagem", {name: "Han Solo"})}
             />
         </TouchableOpacity>
         <TouchableOpacity>
             <Personagem
             Nome={"Yoda"}
+            navegateDetalhes={() =>
+                navigation.navigate("Detalhes do Personagem", {name: "Yoda"})}
             />
         </TouchableOpacity>
         <TouchableOpacity>
             <Personagem
             Nome={"Chewbacca"}
+            navegateDetalhes={() =>
+                navigation.navigate("Detalhes do Personagem", {name: "Chewbacca"})}
             />
         </TouchableOpacity>
       </View>
