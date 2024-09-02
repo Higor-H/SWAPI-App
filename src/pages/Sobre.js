@@ -10,6 +10,22 @@ export default function Sobre({ navigation }) {
       <View >
         <Text>Sobre</Text>
         <Text>Alunos:</Text>
+        <View>
+            <Text>Nome: Higor Milani </Text>
+            <Text>Email: 1135828@atitus.edu.br</Text>
+            <Text>RA: 1135828 </Text>
+        </View>
+        <View>
+            <Text>Nome:  </Text>
+            <Text>Email: </Text>
+            <Text>RA:  </Text>
+        </View>
+        <View>
+            <Text>Nome:  </Text>
+            <Text>Email: </Text>
+            <Text>RA:  </Text>
+        </View>
+        
       </View>
     </SafeAreaView>
   );
