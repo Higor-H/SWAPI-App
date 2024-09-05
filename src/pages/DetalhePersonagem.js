@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
         padding: 20,
     },
     button: {
-        backgroundColor: "#007BFF",
+        backgroundColor: "#153B4D",
         padding: 10,
         marginTop: 10,
         borderRadius: 5,
@@ -118,13 +118,6 @@ const styles = StyleSheet.create({
         padding: 15,
         marginVertical: 10,
         borderRadius: 10,
-        borderWidth: 1,
-        borderColor: "#ddd",
-        shadowColor: "#000",
-        shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.1,
-        shadowRadius: 5,
-        elevation: 3,
     },
     label: {
         fontSize: 16,

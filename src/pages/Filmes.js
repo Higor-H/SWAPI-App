@@ -1,4 +1,4 @@
-import { Button, SafeAreaView, StyleSheet, View, FlatList, Text, TouchableOpacity, ActivityIndicator } from "react-native";
+import { Button, SafeAreaView, StyleSheet, View, FlatList, Text, ActivityIndicator } from "react-native";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CardFilmes from "../components/CardFilmes";
@@ -50,7 +50,6 @@ export default function Filmes({ navigation, route }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f5f5f5",
     padding: 20,
   },
 });

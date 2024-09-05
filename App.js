@@ -33,7 +33,7 @@ const App = () => {
         screenOptions={{
           headerTintColor: "white",
           headerStyle: {
-            backgroundColor: "red",
+            backgroundColor: "#153B4D",
           },
         }}
       >
@@ -100,16 +100,19 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#f0f0f2",
+    
   },
   buttonContainer: {
     alignItems: "center",
     justifyContent: "center",
   },
   button: {
-    backgroundColor: "red",
+    backgroundColor: "#153B4D",
     paddingVertical: 15,
     paddingHorizontal: 30,
     borderRadius: 10,
+    elevation: 50,
   },
   buttonText: {
     color: "white",

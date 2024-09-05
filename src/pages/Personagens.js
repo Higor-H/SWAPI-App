@@ -17,9 +17,9 @@ export default function Personagens({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       <View >
-        <Text>Personagens</Text>
-        <TouchableOpacity>
-            <Personagem
+        {/* <Text style={styles.top}>Personagens</Text> */}
+        <TouchableOpacity >
+            <Personagem 
             Nome={"Luke Skywalker"}
             navegateDetalhes={() =>
                 navigation.navigate("Detalhes do Personagem", {name: "Luke Skywalker"})}
@@ -63,5 +63,11 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "#fff",
     backgroundColor: "#f5f5f5",
-  }
+    margin: "5%",
+  },
+
 });
+
+
+
+
